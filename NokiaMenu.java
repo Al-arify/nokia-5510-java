@@ -128,8 +128,7 @@ public class NokiaMenu {
                 case 2:
                     System.out.println("Inbox..."); break;
                 case 3:
-                    System.out.println("Outbox...");
-                    break;
+                    System.out.println("Outbox..."); break;
                 case 4:
                     System.out.println("Picture messages...");
                     break;
@@ -178,7 +177,7 @@ public class NokiaMenu {
                     System.out.println("Common: Delivery reports, Reply via same centre");
                     break;
                 case 0:
-                    return; // Back to Messages
+                    return;
                 default:
                     System.out.println("Invalid");
             }
