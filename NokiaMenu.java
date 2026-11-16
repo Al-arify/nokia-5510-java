@@ -36,16 +36,13 @@ public class NokiaMenu {
                 System.out.print("Enter: ");
                 int choice = input.nextInt();
 
-            switch (choice) { // OUTER SWITCH
+            switch (choice) { 
                 case 1:
-                    phonebookMenu(input); // Go to INNER SWITCH inside method
-                    break;
+                    phonebookMenu(input); break;
                 case 2:
-                    messagesMenu(input); // Go to INNER SWITCH inside method
-                    break;
+                    messagesMenu(input); break;
                 case 3:
-                    System.out.println("Chat - Coming soon");
-                    break;
+                    System.out.println("Chat - Coming soon"); break;
                 case 0:
                     System.out.println("Phone Off. Bye!");
                     return;
@@ -75,43 +72,32 @@ public class NokiaMenu {
 
                 int choice = input.nextInt();
 
-            switch (choice) { // INNER SWITCH 1
+            switch (choice) {
                 case 1:
-                    System.out.println("Searching contacts...");
-                    break;
+                    System.out.println("Searching contacts..."); break;
                 case 2:
-                    System.out.println("Service Nos...");
-                    break;
+                    System.out.println("Service Nos..."); break;
                 case 3:
-                    System.out.println("Add name...");
-                    break;
+                    System.out.println(input); break;
                 case 4:
-                    System.out.println("Erase...");
-                    break;
+                    System.out.println("Erase..."); break;
                 case 5:
-                    System.out.println("Edit...");
-                    break;
+                    System.out.println("Edit..."); break;
                 case 6:
-                    System.out.println("Copy...");
-                    break;
+                    System.out.println("Copy..."); break;
                 case 7:
-                    System.out.println("Assign tone...");
-                    break;
+                    System.out.println("Assign tone..."); break;
                 case 8:
-                    System.out.println("Send b'card...");
-                    break;
+                    System.out.println("Send b'card..."); break;
                 case 9:
-                    System.out.println("Options - Type of view / Memory status");
-                    break;
+                    System.out.println("Options - Type of view / Memory status"); break;
                 case 10:
-                    System.out.println("Speed dials...");
-                    break;
+                    System.out.println("Speed dials..."); break;
                 case 11:
-                    System.out.println("Voice tags...");
-                    break;
+                    System.out.println("Voice tags..."); break;
                 case 0:
                     System.out.println("Back to Main Menu");
-                    return; // BACK to outer switch
+                    return;
                 default:
                     System.out.println("Invalid");
             }
@@ -136,13 +122,11 @@ public class NokiaMenu {
             System.out.print("Enter: ");
             int choice = input.nextInt();
 
-            switch (choice) { // INNER SWITCH 2
+            switch (choice) {
                 case 1:
-                    System.out.println(input.nextLine());
-                    break;
+                    System.out.println(input.nextLine()); break;
                 case 2:
-                    System.out.println("Inbox...");
-                    break;
+                    System.out.println("Inbox..."); break;
                 case 3:
                     System.out.println("Outbox...");
                     break;
@@ -156,7 +140,7 @@ public class NokiaMenu {
                     System.out.println("Smileys...");
                     break;
                 case 7:
-                    messageSettingsMenu(input); // DEEPER NESTING: Switch inside Switch inside Switch
+                    messageSettingsMenu(input);
                     break;
                 case 8:
                     System.out.println("Info service...");
