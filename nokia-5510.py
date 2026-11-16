@@ -57,7 +57,7 @@ def phonebook_menu():
 
         choice = int(input("Enter: "))
 
-        match choice:  # INNER PHONE SUB-MENU
+        match choice: 
             case 1:
                 print("Searching contacts...")
             case 2:
@@ -82,7 +82,7 @@ def phonebook_menu():
                 print("Voice tags...")
             case 0:
                 print("Back to Main Menu")
-                return  # BACK to outer switch
+                return
             case _:
                 print("Invalid")
 
@@ -107,7 +107,6 @@ def messages_menu():
 
         match choice:  
             case 1:
-              
                 msg = input("Write message: ")
                 print(msg)
             case 2:
@@ -151,7 +150,7 @@ def message_settings_menu():
             case 2:
                 print("Common: Delivery reports, Reply via same centre")
             case 0:
-                return  # Back to Messages
+                return
             case _:
                 print("Invalid")
 
